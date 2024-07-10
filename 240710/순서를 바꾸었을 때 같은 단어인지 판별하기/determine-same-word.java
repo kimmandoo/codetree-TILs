@@ -7,7 +7,7 @@ public class Main {
         char[] a = sc.next().toCharArray();
         char[] b = sc.next().toCharArray();
         Arrays.sort(a);
-        Arrays.sort(a);
+        Arrays.sort(b);
         int len = 0;
         int lenA = a.length;
         int lenB = b.length;
