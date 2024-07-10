@@ -10,7 +10,7 @@ public class Main {
         Arrays.sort(a);
         int len = a.length;
         int lenB = b.length;
-        if(lenA < lenB) len = lenB; 
+        if(len < lenB) len = lenB; 
         boolean t = true; 
         for(int i=0; i< len; i++){
             if(a[i] != b[i]){
