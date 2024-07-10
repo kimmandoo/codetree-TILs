@@ -8,12 +8,15 @@ public class Main {
         char[] b = sc.next().toCharArray();
         Arrays.sort(a);
         Arrays.sort(a);
-        int len = a.length;
+        int len = 0;
+        int lenA = a.length;
         int lenB = b.length;
-        if(len < lenB) len = lenB; 
+        if(len < lenB) len = lenB;
+        else len = lenA;
+
         boolean t = true; 
         for(int i=0; i< len; i++){
-            if(a[i] != b[i]){
+            if(a[i] != b[i] || lenA != lenB){
                 System.out.print("No");
                 return;
             }
