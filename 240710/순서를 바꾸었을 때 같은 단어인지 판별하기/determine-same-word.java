@@ -8,8 +8,11 @@ public class Main {
         char[] b = sc.next().toCharArray();
         Arrays.sort(a);
         Arrays.sort(a);
+        int len = a.length;
+        int lenB = b.length;
+        if(lenA < lenB) len = lenB; 
         boolean t = true; 
-        for(int i=0; i< a.length; i++){
+        for(int i=0; i< len; i++){
             if(a[i] != b[i]){
                 System.out.print("No");
                 return;
